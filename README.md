@@ -257,7 +257,6 @@ clflush size    : 64
 cache_alignment : 64
 address sizes   : 48 bits physical, 48 bits virtual
 power management:
-
 processor       : 1
 vendor_id       : AuthenticAMD
 cpu family      : 25
