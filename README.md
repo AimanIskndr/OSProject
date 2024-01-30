@@ -311,8 +311,8 @@ __16191352__.
 - __Hardware Architecture__: x86_64
 
 14. What is the difference between **ls** vs **ls -asl**. ***(1 mark)***.
-__ls        : lists files and directories in a directory.__
-__ls -asl   : provides a detailed listing, including file permissions, number of links__.
+- __ls        : lists files and directories in a directory.__
+- __ls -asl   : provides a detailed listing, including file permissions, number of links__.
 
 15. What is the TLB size of the Virtual CPU. ***(1 mark)*** 
 __2560 4K pages__.
@@ -341,7 +341,7 @@ f65be1987f84   debian    "bash"    4 minutes ago   Up 4 minutes             roma
 
 3. Keep note of the name used by your container, this is usually given random names unless you specify your own name. Now run a bash command on the container. Make sure you use the name of your container instead of the one shown here. 
 ```bash
-docker exec -i -t romantic_jackson /bin/bash
+docker exec -i -t reverent_lederberg /bin/bash
 ```
 
 4. Create a file on the container. First you must make sure you are in the bash command prompt of the container. The container is new, and does not have any software other than the debian OS. To create a new file, you will need an editor installed. In the bash shell of the container, run the package manager apt-get to install nano text editor. 
@@ -358,7 +358,7 @@ root@f65be1987f84:~# nano helloworld.txt
 
 5. Edit your helloworld.txt, create your messsage and save by typing ctrl-X. Once saved, explore using the container to see where the file is located. Then exit the shell, by typing **exit**.
 
-6. Stop the container and run **docker ps -a**, and restart the container again. Is your file in the container still available?
+6. Stop the container and run **docker ps -a**, and d the container again. Is your file in the container still available?
 ```bash 
 @joeynor ➜ /workspaces/OSProject (main) $ docker stop romantic_jackson
 
@@ -383,8 +383,13 @@ f65be1987f84   debian    "bash"    19 minutes ago   Exited (137) 18 seconds ago 
 
 ***Questions:***
 
-1. Are files in the container persistent. Why not?. ***(1 mark)*** __Fill answer here__.
-2. Can we run two, or three instances of debian linux? . ***(1 mark)*** __Fill answer here__.
+1. Are files in the container persistent. Why not?. ***(1 mark)***. 
+
+__By default all files created inside a container are stored on a writable container layer. This means that: The data doesn't persist when that container no longer exists, and it can be difficult to get the data out of the container if another process needs it. Containers are designed to be stateless and ephemeral, and any changes made inside the container are lost when the container is removed. To make files persistent, you would typically use volumes to store data outside the container.__.
+
+2. Can we run two, or three instances of debian linux? . ***(1 mark)*** 
+
+__Yes, it is possible to run two or three instances of Debian Linux.__.
 
 ## Running your own container with persistent storage
 
