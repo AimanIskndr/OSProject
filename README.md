@@ -22,8 +22,12 @@ Team Mates:
 
 ***Questions:***
 
-1. What is the link of the fork OSProject in your repository. ***(1 mark)*** __https://github.com/AimanIskndr/OSProject__.
-2. How many files and folders are in this repository. ***(1 mark)*** __7 Files and 1 Folder__.
+1. What is the link of the fork OSProject in your repository. ***(1 mark)***
+
+   __https://github.com/AimanIskndr/OSProject__.
+2. How many files and folders are in this repository. ***(1 mark)***
+  
+   __7 Files and 1 Folder__.
 
 
 ## Exploring github codespaces
@@ -55,7 +59,9 @@ Team Mates:
 
 ***Questions:***
 
-1. What is default OS used to run the virtual environment for codespaces. ***(1 mark)*** __Ubuntu Linux__.
+1. What is default OS used to run the virtual environment for codespaces. ***(1 mark)***
+
+   __Ubuntu Linux__.
 2. What are the two options of ram, disk and vcpu configuration you can have in running codespaces . ***(1 mark)*** 
 
 __Option 1:__
@@ -67,7 +73,9 @@ __Option 2:__
 - Cores: Up to 32 cores
 - RAM: Up to 64 GB
 - Storage: Up to 128 GB
-3. Why must we commit and sync our current work on source control? ***(1 mark)*** __To make sure that our local repository changes are updated in the source control and allows keep our local repository up to date with the latest changes from other contributors__.
+3. Why must we commit and sync our current work on source control? ***(1 mark)***
+
+__To make sure that our local repository changes are updated in the source control and allows keep our local repository up to date with the latest changes from other contributors__.
 
 ## Exploring the Terminal
 
@@ -85,9 +93,11 @@ codespace
 Look at the TERMINAL tab. Run the following commands and provide the output here. 
 
 1. Run the command **pwd** . ***(1 mark)*** 
-__/workspaces/OSProject__.
+
+```/workspaces/OSProject```
 
 2. Run the command **cat /etc/passwd** . ***(1 mark)***.
+```
 root:x:0:0:root:/root:/bin/bash
 daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
 bin:x:2:2:bin:/bin:/usr/sbin/nologin
@@ -113,8 +123,9 @@ systemd-resolve:x:103:104:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
 messagebus:x:104:105::/nonexistent:/usr/sbin/nologin
 codespace:x:1000:1000::/home/codespace:/bin/bash
 sshd:x:105:65534::/run/sshd:/usr/sbin/nologin
-
+```
 3. Run the command **df** . ***(1 mark)***.
+```
 Filesystem     1K-blocks     Used Available Use% Mounted on
 overlay         32847680 14961924  16191660  49% /
 tmpfs              65536        0     65536   0% /dev
@@ -122,8 +133,9 @@ shm                65536        0     65536   0% /dev/shm
 /dev/root       30298176 22953160   7328632  76% /vscode
 /dev/loop3      32847680 14961924  16191660  49% /workspaces
 /dev/sdb1       46127956       56  43752324   1% /tmp
-
+```
 4. Run the command **du** . ***(1 mark)***.
+```
 64      ./.git/hooks
 4       ./.git/branches
 8       ./.git/info
@@ -212,24 +224,28 @@ shm                65536        0     65536   0% /dev/shm
 2648    ./.git
 1972    ./images
 4640    .
-
+```
 5. Run the command **ls** . ***(1 mark)***.
+```
 README.md  images
-
+```
 6. Run the command **ls -asl** . ***(1 mark)***.
+```
 total 32
  4 drwxrwxrwx+ 4 codespace root       4096 Jan 30 04:30 .
  4 drwxr-xrwx+ 5 codespace root       4096 Jan 29 14:12 ..
  4 drwxrwxrwx+ 9 codespace root       4096 Jan 30 04:30 .git
 16 -rw-rw-rw-  1 codespace codespace 15543 Jan 30 04:34 README.md
  4 drwxrwxrwx+ 2 codespace root       4096 Jan 29 14:11 images
-
+```
 7. Run the command **free -h** . ***(1 mark)***.
+```
 __            total        used        free      shared  buff/cache   available__
 Mem:          7.7Gi       1.3Gi       156Mi       1.0Mi       6.3Gi       6.1Gi
 Swap:            0B          0B          0B.
-
+```
 8. Run the command **cat /proc/cpuinfo** . ***(1 mark)***.
+```
 processor       : 0
 vendor_id       : AuthenticAMD
 cpu family      : 25
@@ -284,8 +300,9 @@ clflush size    : 64
 cache_alignment : 64
 address sizes   : 48 bits physical, 48 bits virtual
 power management:
-
+```
 9. Run the command **top** and type **q** to quit. ***(1 mark)***.
+```
 top - 04:38:50 up  1:01,  0 users,  load average: 0.10, 0.37, 0.46
 Tasks:  20 total,   2 running,  18 sleeping,   0 stopped,   0 zombie
 %Cpu(s):  2.5 us,  5.7 sy,  0.0 ni, 91.6 id,  0.2 wa,  0.0 hi,  0.0 si,  0.0 st
@@ -296,17 +313,20 @@ MiB Swap:      0.0 total,      0.0 free,      0.0 used.   6239.7 avail Mem
     345 codespa+  20   0   11.2g 241128  51968 S   2.0   3.0   0:26.96 node                                                                
     301 codespa+  20   0  971108 116360  42368 S   0.3   1.4   0:08.08 node                                                                
    6188 codespa+  20   0   10868   3456   3072 R   0.3   0.0   0:00.01 top
-
+```
 10. Run the command **uname -a**. ***(1 mark)***.
+```
 __Linux codespaces-87cb5f 6.2.0-1018-azure #18~22.04.1-Ubuntu SMP Tue Nov 21 19:25:02 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux__.
+```
+12. What is the available free memory in the system. ***(1 mark)***.
 
-11. What is the available free memory in the system. ***(1 mark)***.
 __156 Mi__.
 
-12. What is the available disk space mounted on /workspace. ***(1 mark)***.
+13. What is the available disk space mounted on /workspace. ***(1 mark)***.
+
 __16191352__.
 
-13. Name the version and hardware architecture of the linux Virtual environment. ***(1 mark)*** .
+14. Name the version and hardware architecture of the linux Virtual environment. ***(1 mark)*** .
 - __Version__: 6.2.0-1018-azure #18~22.04.1-Ubuntu SMP Tue Nov 21 19:25:02 UTC 2023
 - __Hardware Architecture__: x86_64
 
@@ -315,6 +335,7 @@ __16191352__.
 - __ls -asl   : provides a detailed listing, including file permissions, number of links__.
 
 15. What is the TLB size of the Virtual CPU. ***(1 mark)*** 
+
 __2560 4K pages__.
 
 16. What is the CPU speed of the Virtual CPU. ***(1 mark)***. 
@@ -322,9 +343,10 @@ __2560 4K pages__.
 - __Processor 1__: 2889.019 MHz
 
 17. What is the top running process that consumes the most CPU cycles. ***(1 mark)***
+```
 __PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND__
 __345 codespa+  20   0   11.2g 241128  51968 S   2.0   3.0   0:26.96 node__.
-
+```
 ## Running your own container instance.
 
 1. At the terminal, run a linux instance. By typing the following command. 
@@ -408,14 +430,18 @@ At the terminal, create a new directory called **myroot**, and run a instance of
 
 ***Questions:***
 
-1. Check the permission of the files created in myroot, what user and group is the files created in docker container on the host virtual machine? . ***(2 mark)*** __0__.
+1. Check the permission of the files created in myroot, what user and group is the files created in docker container on the host virtual machine? . ***(2 mark)***.
+```
+/workspaces/OSProject/myroot.
+```
 2. Can you change the permission of the files to user codespace.  You will need this to be able to commit and get points for this question. ***(2 mark)***
 ```bash
 //use sudo and chown
 sudo chown -R codespace:codespace myroot
 
 ```
-*** __No__.***
+***__No__.***
+```chown: cannot access 'myroot': No such file or directory```
 
 ## You are on your own, create your own static webpage
 
@@ -450,9 +476,10 @@ docker run --detach -v /workspaces/OSProject/webpage:/usr/local/apache2/htdocs/ 
 
 __8080__
 3. What port is open for http protocol on the host machine? ***(1 mark)***
-
-__8080__
-
+```
+tcp 0 0 0.0.0.0:8080 0.0.0.0:* LISTEN
+tcp6 0 0 :::8080 :::* LISTEN
+```
 
 ## What to submit
 
