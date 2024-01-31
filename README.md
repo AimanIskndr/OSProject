@@ -474,12 +474,11 @@ docker run --detach -v /workspaces/OSProject/webpage:/usr/local/apache2/htdocs/ 
 - __Group: root__.
 2. What port is the apache web server running. ***(1 mark)***
 
-__8080__
+__80__
+
 3. What port is open for http protocol on the host machine? ***(1 mark)***
-```
-tcp 0 0 0.0.0.0:8080 0.0.0.0:* LISTEN
-tcp6 0 0 :::8080 :::* LISTEN
-```
+   
+__8080__
 
 ## What to submit
 
